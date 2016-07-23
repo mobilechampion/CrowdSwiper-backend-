@@ -1,0 +1,52 @@
+
+Get list submitted articles of a user
+
+<pre>
+  http://localhost:3000/users/:id/submit_articles.json?page=1
+</pre>
+
+Method
+<pre>GET</pre>
+
+Param page
+<pre>http://localhost:3000/users/:id/submit_articles.json?page=1</pre>
+
+Example
+<pre>
+curl http://localhost:3000/users/1/submit_articles.json -v -H "access-token: 9yCjSrbvBUIjyeHWo1-3Jg" \
+  -H "Client: ZVmQR8oIAsYByyj8OXi80g" \
+  -H "Expiry: 1467774356" \
+  -H "Uid: quyetdc.uet@gmail.com" \
+
+</pre>
+
+<h5>
+  Response
+</h5>
+
+<pre>
+  {
+     "articles":[
+        {
+           "id":1,
+           "user_id":1,
+           "title":"Test-Article",
+           "url":"http://www.24h.com.vn/bong-da/phap-thuy-si-niem-vui-chia-nua-c48a798400.html",
+           "created_at":"2016-06-20T04:29:56.000Z",
+           "updated_at":"2016-06-20T04:29:56.000Z"
+        },
+        {
+           "id":2,
+           "user_id":1,
+           "title":"Test-Article",
+           "url":"http://www.24h.com.vn/bong-da/phap-thuy-si-niem-vui-chia-nua-c48a798400.html",
+           "created_at":"2016-06-20T04:30:58.000Z",
+           "updated_at":"2016-06-20T04:30:58.000Z"
+        }
+     ],
+      per_page: 20,
+      status: "success"
+  }
+</pre>
+<!--  END SIGN UP  -->
+

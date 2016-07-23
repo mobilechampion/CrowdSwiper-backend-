@@ -1,0 +1,9 @@
+development:
+  cloud_name: "hiworld"
+  api_key: "553828295199963"
+  api_secret: "pBfDZ3CtaM0szTFwp8_kdgRjSQQ"
+
+production:
+  cloud_name: "hiworld"
+  api_key: "553828295199963"
+  api_secret: "pBfDZ3CtaM0szTFwp8_kdgRjSQQ"

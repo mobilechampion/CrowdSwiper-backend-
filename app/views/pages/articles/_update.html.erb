@@ -1,0 +1,20 @@
+URL
+<pre>
+  http://localhost:3000/articles/1.json
+</pre>
+
+Method
+<h5>
+  PUT
+</h5>
+
+Curl Command
+<pre>
+      curl --data "article[title]=Test-Article&article[url]=http://www.24h.com.vn/bong-da/phap-thuy-si-niem-vui-chia-nua-c48a798400.html&article[approved]=true" \
+        http://localhost:3000/articles/1.json \
+        -H "access-token: o7S6wUMZE-xnfHHTUtDq8A" \
+        -H "Client: 6LuIUGHfFOHmsuERWymR3g" \
+        -H "Expiry: 1467611386" \
+        -H "Uid: quyetdc.uet@gmail.com" -v -X PUT
+</pre>
+

@@ -1,0 +1,66 @@
+
+<pre>
+  curl --data "email=quyetdc.uet@gmail.com&password=password&password_confirmation=password&image="#{file}" http://localhost:3000/users -v
+</pre>
+
+<h5>
+  Params
+</h5>
+<pre>
+  email
+  password
+  password_confirmation
+  image
+  birthday #day-month-year ex: 24-09-1990
+  political_persuasion #[0 => :democrat, 1 => :independent, 2 => :libertarian, 3 => :republican, 4 => :other ]
+</pre>
+
+<h5>
+  Header
+</h5>
+<pre>
+  < HTTP/1.1 200 OK
+  < Access-Token: lWLYKkSb9baIFQ9EZNWQ9g
+  < Token-Type: Bearer
+  < Expiry: 1467452213
+  < Uid: test_user@gmail.com
+  < Content-Type: application/json; charset=utf-8
+</pre>
+
+<h5>
+  Data
+</h5>
+
+<pre>
+{
+  "status": "success"
+  "data": {
+    "id": 7
+    "provider": "email"
+    "uid": "example@gmail.com"
+    "name": null
+    "nickname": null
+    "image": {
+      "url": "http://res.cloudinary.com/hiworld/image/upload/v1467424939/fq8xnxlfzk9rcldjaklf.png"
+      "standard": {
+      "url": "http://res.cloudinary.com/hiworld/image/upload/c_fill,g_north,h_150,w_100/v1467424939/fq8xnxlfzk9rcldjaklf.png"
+    }-
+    "thumbnail": {
+      "url": "http://res.cloudinary.com/hiworld/image/upload/c_fit,h_50,w_50/v1467424939/fq8xnxlfzk9rcldjaklf.png"
+      }-
+    }-
+    "email": "example@gmail.com"
+    "created_at": "2016-07-02T02:02:17.202Z"
+    "updated_at": "2016-07-02T02:02:19.929Z"
+    "total_submit_articles": 0
+    "total_homepage_articles": 0
+    "total_removed_articles": 0
+    "total_sent_invitations": 0
+    "total_register_invitations": 0
+    "total_days_as_member": 0
+    "birthday": "1998-12-25T00:00:00.000Z"
+    "political_persuasion": "other"
+  }-
+}
+    </pre>
+<!--  END SIGN UP  -->

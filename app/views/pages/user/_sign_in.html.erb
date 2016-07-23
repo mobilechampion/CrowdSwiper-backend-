@@ -1,0 +1,36 @@
+
+<pre>
+      curl --data "email=quyetdc.uet@gmail.com&password=password" http://localhost:3000/users/sign_in -v
+</pre>
+
+<h5>
+  Header
+</h5>
+<pre>
+      < HTTP/1.1 200 OK
+      < Access-Token: lWLYKkSb9baIFQ9EZNWQ9g
+      < Token-Type: Bearer
+      < Expiry: 1467452213
+      < Uid: test_user@gmail.com
+      < Content-Type: application/json; charset=utf-8
+    </pre>
+
+<h5>
+  Data
+</h5>
+
+<pre>
+      {
+  "data": {
+    "id": 4,
+    "provider": "email",
+    "uid": "quyetdc.uet@gmail.com",
+    "name": null,
+    "nickname": null,
+    "image": null,
+    "email": "quyetdc.uet@gmail.com"
+  },
+  status: 'success'
+}
+    </pre>
+<!--  END SIGN UP  -->

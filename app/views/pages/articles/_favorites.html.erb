@@ -1,0 +1,74 @@
+Note: User need to sign in for this API
+<br>
+URL
+<pre>
+  http://localhost:3000/articles/favorites.json
+</pre>
+
+Method
+<pre>GET</pre>
+
+Param page
+<pre>http://localhost:3000/articles/favorites.json?page=1</pre>
+
+<h5>
+  Response
+</h5>
+
+<pre>
+{
+  "data": {
+    "articles": [
+      {
+        ""id": 7
+        "user_id": 2
+        "title": "Kim says North Korean missiles can reach US in Pacific"
+        "url": "http://www.bbc.com/news/world-asia-36603416"
+        "created_at": "2016-07-02T01:42:59.000Z"
+        "updated_at": "2016-07-02T01:42:59.000Z"
+        "total_view": 0
+        "score": 5
+        "approved": false
+        "total_votes": 0
+        "total_vote_points": 0
+        "averaged_votes": null
+        "total_score": 2.85
+        "favorited": true
+        "user": {
+          "id": 2
+          "provider": "email"
+          "uid": "member2@example.com"
+          "name": null
+          "nickname": null
+          "image": {
+            "url": null
+            "standard": {
+              "url": null
+            }-
+            "thumbnail": {
+              "url": null
+            }-
+          }-
+          "email": "member2@example.com"
+          "created_at": "2016-07-02T01:42:59.000Z"
+          "updated_at": "2016-07-02T01:42:59.000Z"
+          "total_submit_articles": 0
+          "total_homepage_articles": 0
+          "total_removed_articles": 0
+          "total_sent_invitations": 0
+          "total_register_invitations": 0
+          "total_days_as_member": 0
+          "birthday": "2016-07-02T01:42:59.000Z"
+          "political_persuasion": null
+        }
+      }
+    ]
+  },
+  per_page: 20,
+  "status": "success",
+  "page" : 1
+
+}
+</pre>
+<!--  END SIGN UP  -->
+

@@ -1,0 +1,55 @@
+
+URL
+<pre>
+  http://localhost:3000/articles/:id/vote.json
+</pre>
+
+Method
+<pre>POST</pre>
+
+Example
+<pre>
+curl http://localhost:3000/articles/1/vote.json -v -H "access-token: 9yCjSrbvBUIjyeHWo1-3Jg" \
+  -H "Client: ZVmQR8oIAsYByyj8OXi80g" \
+  -H "Expiry: 1467774356" \
+  -H "Uid: quyetdc.uet@gmail.com" --data "value: 0.1"
+</pre>
+
+<h5>
+  Response
+</h5>
+
+<pre>
+{
+  "data": {
+    "total_votes": 1,
+    "total_vote_points": 0.10000000149011612,
+    "averaged_votes": 0.1
+  },
+  "status": "success"
+}
+
+  # in case error
+
+  {
+      "errors": {
+        "value": [
+          "should be greater than 0 and less than 1"
+        ],
+        "full_messages": [
+          "Value should be greater than 0 and less than 1"
+        ]
+      },
+
+      "status": "error"
+  }
+
+  #in case have voted
+
+  {
+  "status": "success"
+  "message": "You have voted"
+  }
+</pre>
+<!--  END SIGN UP  -->
+

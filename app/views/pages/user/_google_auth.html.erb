@@ -1,0 +1,44 @@
+CURL
+<pre>
+  curl --data "access_token=YOUR_ACCESS_TOKEN" http://localhost:3000/users/oauth/google -v
+</pre>
+
+<h5>
+  Data Header
+</h5>
+
+<pre>
+HTTP/1.1 200 OK
+< Access-Token: CcOaWiZsx9PbWqyEIhRM_g
+< Client: 0kJtrDvXgwrVNa8NaYwwow
+< Expiry: 1467734269
+< Uid: 1081758825220626
+< Content-Type: application/json; charset=utf-8
+</pre>
+
+<pre>
+
+{
+   "status":"success",
+   "data":{
+      "user":{
+         "id":1,
+         "provider":"email",
+         "uid":"quyetdc.uet@gmail.com",
+         "name":null,
+         "nickname":null,
+         "image":null,
+         "email":"quyetdc.uet@gmail.com",
+         "created_at":"2016-06-20T04:19:42.000Z",
+         "updated_at":"2016-06-21T04:41:27.000Z",
+         "total_submit_articles":0,
+         "total_homepage_articles":0,
+         "total_removed_articles":0,
+         "total_sent_invitations":0,
+         "total_register_invitations":0,
+         "total_days_as_member":0
+      }
+   }
+}
+</pre>
+<!--  END SIGN UP  -->
